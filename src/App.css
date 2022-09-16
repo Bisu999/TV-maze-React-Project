@@ -5,8 +5,10 @@
   font-size: 62.5%;
 }
 body {
-  background-color: rgb(11, 255, 255);
-  color: rgb(26, 44, 137);
+  /* background-color: rgb(11, 255, 255); */
+  background-image: url(https://2359media-website.s3.ap-southeast-1.amazonaws.com/upload/production/9bab1460717e4860b38faef103185905.jpg);
+  background-attachment: fixed;
+  color: rgb(0, 254, 182);
   word-spacing: 2px;
   letter-spacing: 0.5px;
 }
@@ -17,8 +19,8 @@ section {
   width: 80%;
   background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
-    rgba(97, 186, 255, 1) 0%,
-    rgba(166, 239, 253, 1) 90.1%
+    rgba(97, 186, 255, 0.3) 0%,
+    rgba(166, 239, 253, 0.3) 90.1%
   );
   font-size: 2rem;
 }
@@ -67,7 +69,8 @@ section {
   justify-content: space-around;
   align-items: center;
   margin: 1rem 0;
-  background-color: white;
+  /* background-color: white; */
+  background-image: url(https://www.strategus.com/why-ott-advertising/);
 }
 
 .show-name {
@@ -120,6 +123,7 @@ section {
   * {
     font-size: 31.25%;
   }
+
   .pic {
     max-width: 85%;
   }
