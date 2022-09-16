@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: rgb(11, 255, 255);
+  color: rgb(26, 44, 137);
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  padding: 1em;
+  margin: 0.5em auto;
+  width: 80%;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(97, 186, 255, 1) 0%,
+    rgba(166, 239, 253, 1) 90.1%
+  );
+  font-size: 2rem;
+}
+/* ------------------- Header ----------------- */
+.main-heading {
+  font-size: 5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.secondary-heading {
+  font-size: 4rem;
+  margin: 0.25em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#actors,
+#shows {
+  margin: 0 1em;
+  cursor: pointer;
+  padding: 2em;
+  height: 2em;
+  width: 2em;
+}
+
+.sub-headings {
+  font-size: 3rem;
+  margin: 0.5em;
+}
+
+.input-field{
+  width: 25vw;
+  height: 2em;
+  outline: none;
+  padding-left: 0.25em;
+  font-size: 2rem;
+}
+
+.error {
+  visibility: hidden;
+  color: red;
+  font-size: 1.5rem;
+}
+
+/* ------------------- Content ----------------- */
+
+.container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 1rem 0;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.show-name {
+  padding: 1rem;
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.show-name a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgba(11, 27, 103, 1);
+}
+
+.show-summary {
+  padding: 0 2rem;
+  font-size: 1.5rem;
+
+}
+
+.show-summary b,
+.show-summary p {
+  font-size: 1.5rem;
+}
+
+.pic {
+  min-width: 20rem;
+}
+
+/* ------------------- Media queries ----------------- */
+
+@media (max-width: 520px) {
+  * {
+    font-size: 50%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container {
+    display: block;
+    text-align: center;
+  }
+  .pic {
+    min-height: 30rem;
+  }
+  #actors,
+  #shows {
+    margin: 0;
+  }
+}
+
+@media (max-width: 335px) {
+  * {
+    font-size: 31.25%;
+  }
+  .pic {
+    max-width: 85%;
   }
 }
